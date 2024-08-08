@@ -8,7 +8,7 @@
     <title>Best bakery</title>
   </head>
   <body>
-    <header>
+    <header style="background-color: aqua">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -80,33 +80,51 @@
       </section>
       <section class="section" id="chef-section">
         <div class="container">
-          <h2 class="chef-title section-title">
+          <h2 class="chef-title section-title centered">
             Our best <span class="accent">chefs</span>
           </h2>
-          <ul>
-            <li>
-              <article>
-                <h3 class="chefs-title">Nastya</h3>
-                <p>Hi, I'm Nastya!</p>
-                <p>
-                  I have been bringing interesting and delicious ideas to life
-                  for 10 years.
-                </p>
-                <p>I'll bake the most delicious products for you!</p>
+          <ul class="chef-list">
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="chef-image"
+                  src="./images/nastya-chef.jpg"
+                  alt="Nastya is a chef"
+                />
+                <div>
+                  <h3 class="chefs-title">Nastya</h3>
+                  <div class="chef-text">
+                    <p>Hi, I'm Nastya!</p>
+                    <p>
+                      I have been bringing interesting and delicious ideas to
+                      life for 10 years.
+                    </p>
+                    <p>I'll bake the most delicious products for you!</p>
+                  </div>
+                </div>
               </article>
             </li>
-            <li>
-              <article>
-                <h3 class="chefs-title">Vlad</h3>
-                <p>Hi, I'm Vlad!</p>
-                <p>
-                  My patisserie experience is already 18 years old and SHOP
-                  BEKERY is our love that we share with you every time through
-                  our patisserie!
-                </p>
-                <p>
-                  I will make a unique filling for you, to suit every taste!
-                </p>
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="chef-image"
+                  src="./images/vlad-chef.jpg"
+                  alt="Vlad is a chef"
+                />
+                <div>
+                  <h3 class="chefs-title">Vlad</h3>
+                  <div class="chef-text">
+                    <p>Hi, I'm Vlad!</p>
+                    <p>
+                      My patisserie experience is already 18 years old and SHOP
+                      BEKERY is our love that we share with you every time
+                      through our patisserie!
+                    </p>
+                    <p>
+                      I will make a unique filling for you, to suit every taste!
+                    </p>
+                  </div>
+                </div>
               </article>
             </li>
           </ul>
@@ -114,114 +132,142 @@
       </section>
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="formats-title section-title">Formats</h2>
-          <ul class="formats-list">
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title">Walrus</h3>
-                <div class="format-text">
-                  <p>Area: up to 120 m2</p>
-                  <p>Menu: extensive menu</p>
-                  <p>
-                    Staff: 2 cashiers, 2 bakers, 2 bakery assistants, 2
-                    waiters/waitresses
-                  </p>
-                  <p>Seating: there are</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title">Horsehoe</h3>
-                <div class="format-text">
-                  <p>Area: up to 25 m2</p>
-                  <p>Menu: the most popular dishes</p>
-                  <p>Staff: 2 cashiers, 2 bakers, 1 assistant baker</p>
-                  <p>Seating: No seating</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title">Handlebar</h3>
-                <div class="format-text">
-                  <p>Area: up to 15 m2</p>
-                  <p>Menu: the most popular dishes</p>
-                  <p>Staff: 1 salesperson, 1 baker, 1 baker's assistant</p>
-                  <p>Seating: no seating</p>
-                </div>
-              </article>
-            </li>
-          </ul>
+          <h2 class="formats-title section-title centered">Formats</h2>
+          <div class="formats-container">
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="formats-list">
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 class="format-title">Walrus</h3>
+                  <div class="format-text">
+                    <p>Area: up to 120 m2</p>
+                    <p>Menu: extensive menu</p>
+                    <p>
+                      Staff: 2 cashiers, 2 bakers, 2 bakery assistants, 2
+                      waiters/waitresses
+                    </p>
+                    <p>Seating: there are</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 class="format-title">Horsehoe</h3>
+                  <div class="format-text">
+                    <p>Area: up to 25 m2</p>
+                    <p>Menu: the most popular dishes</p>
+                    <p>Staff: 2 cashiers, 2 bakers, 1 assistant baker</p>
+                    <p>Seating: No seating</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 class="format-title">Handlebar</h3>
+                  <div class="format-text">
+                    <p>Area: up to 15 m2</p>
+                    <p>Menu: the most popular dishes</p>
+                    <p>Staff: 1 salesperson, 1 baker, 1 baker's assistant</p>
+                    <p>Seating: no seating</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
-          <h2 class="contact-title section-title">Join the bakery chain</h2>
-          <p>Fill out the form to contact us!</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1297.4601078081112!2d32.01552189050782!3d49.42932237635441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14c6cf9648869%3A0x3b1de997a62ae93d!2zQmFrZXJ5INC_0LXQutCw0YDQvdGPLdC60LDQsifRj9GA0L3Rjw!5e0!3m2!1sru!2sua!4v1722512538686!5m2!1sru!2sua"
-            width="603"
-            height="595"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title section-title">Join the bakery chain</h2>
+              <p>Fill out the form to contact us!</p>
+              <!-- form -->
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1297.4601078081112!2d32.01552189050782!3d49.42932237635441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14c6cf9648869%3A0x3b1de997a62ae93d!2zQmFrZXJ5INC_0LXQutCw0YDQvdGPLdC60LDQsifRj9GA0L3Rjw!5e0!3m2!1sru!2sua!4v1722512538686!5m2!1sru!2sua"
+              width="603"
+              height="595"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
       <!-- Maain info -->
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="#">
-            <img src="./images/logo.svg" alt="Best bakery logo" />
-          </a>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Our traditions</a>
-            </li>
-            <li><a class="link" href="#chef-section">Chefs</a></li>
-            <li><a class="link" href="#formats-section">Formats</a></li>
-            <li><a class="link" href="#contact-section">Contacts</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="address-link" href="tel:+380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
-              <!-- tel:+380960000007 сразу звонит на єтот номер -->
-            </li>
-            <li>
-              <a class="address-link" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="address-link"
-                href="https://maps.app.goo.gl/RsKXzcXCrXNJucqU8"
-                target="_blank"
-              >
-                Ukraine, Cherkasy, 10, Vitalii Verhai Street.
-              </a>
-            </li>
-            <li>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
               <a href="#">
-                <!-- facebook -->
+                <img src="./images/logo.svg" alt="Best bakery logo" />
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- Instagram -->
-              </a>
-            </li>
-          </ul>
-          <a class="address-link" href="" target="_blank">Privacy policy</a>
-          <p class="address-copyright">&copy; 2024 All rights reserved</p>
-        </address>
+            </div>
+            <ul class="footer-menu">
+              <li>
+                <a class="link" href="#traditions-section">Our traditions</a>
+              </li>
+              <li><a class="link" href="#chef-section">Chefs</a></li>
+              <li><a class="link" href="#formats-section">Formats</a></li>
+              <li><a class="link" href="#contact-section">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07
+                </a>
+                <!-- tel:+380960000007 сразу звонит на єтот номер -->
+              </li>
+              <li>
+                <a class="address-link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://maps.app.goo.gl/RsKXzcXCrXNJucqU8"
+                  target="_blank"
+                >
+                  Ukraine, Cherkasy, 10, Vitalii Verhai Street.
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a class="address-link" href="" target="_blank">Privacy policy</a>
+              <p class="address-copyright">&copy; 2024 All rights reserved</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
